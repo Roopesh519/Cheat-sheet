@@ -38,11 +38,14 @@ Think step by step.
 6. `git stash apply`
 
 ### Important Commands
-1. Dry run -> ```markdown `npm bdd_dry_run` ```
-2. Run localhost -> `npm run dev`
-3. Run single feature -> `npx cucumber-js path/to/your/file.feature --import test`
-4. Run all the features -> 
-5. Install Packages -> `npm i --force` / `npm install --force`
+1. Dry run ->
+2. ```markdown
+3. `npm bdd_dry_run`
+4. ```
+5. Run localhost -> `npm run dev`
+6. Run single feature -> `npx cucumber-js path/to/your/file.feature --import test`
+7. Run all the features -> 
+8. Install Packages -> `npm i --force` / `npm install --force`
 
 ### Test the Pipeline Locally
 1. `pm2 kill`
