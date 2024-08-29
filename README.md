@@ -38,24 +38,49 @@ Think step by step.
 6. `git stash apply`
 
 ### Important Commands
-1. Dry run ->
+1. Dry run
 ```markdown
 npm bdd_dry_run
 ```
-2. Run localhost -> `npm run dev`
-6. Run single feature -> `npx cucumber-js path/to/your/file.feature --import test`
-7. Run all the features -> 
-8. Install Packages -> `npm i --force` / `npm install --force`
+2. Run localhost
+```markdown
+npm run dev
+```
+3. Run single feature
+```markdown
+npx cucumber-js path/to/your/file.feature --import test
+```
+4. Run all the features  
+8. Install Packages
+```markdown
+npm i --force / npm install --force
+```
 
 ### Test the Pipeline Locally
-1. `pm2 kill`
-2. `npm run build`
-3. `pm2 start scripts/server.js`
-4. `node scripts/bdd_unit_testing_azure.js`
-5. `node scripts/integration_testing.js`
+```markdown
+pm2 kill
+```
+```markdown
+npm run build
+```
+```markdown
+pm2 start scripts/server.js
+```
+```markdown
+node scripts/bdd_unit_testing_azure.js
+```
+```markdown
+node scripts/integration_testing.js
+```
 
 ### Miscellaneous Commands:
-1. Remove a directory: `rm -rf directory-name` / `rm -r directory-name`
+1. Remove a directory:
+```markdown
+rm -rf directory-name
+```
+```markdown
+rm -r directory-name
+```
 
 ---
 
@@ -136,5 +161,3 @@ Android/app/build/outputs/apk/release/app-release.apk
 ```
 
 ```
-
-You can copy this content into a `README.md` file in your GitHub repository.
