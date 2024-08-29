@@ -150,7 +150,11 @@ detox build -c android.emu.debug
 ### Build the Android App for Testing
 ```bash
 npm run prebuild
+```
+```markdown
 cd android
+```
+```markdown
 ./gradlew app:assembleRelease
 ```
 
@@ -158,6 +162,4 @@ cd android
 Retrieve the APK from:
 ```bash
 Android/app/build/outputs/apk/release/app-release.apk
-```
-
 ```
