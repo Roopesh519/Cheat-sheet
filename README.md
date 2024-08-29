@@ -1,5 +1,3 @@
-
-```markdown
 # CHEAT SHEET
 ______________________________________________________________________________
 
@@ -14,18 +12,19 @@ ______________________________________________________________________________
 ## Prompts for Happy, Unhappy Path and Gherkin
 
 **Generate Happy paths and Unhappy paths**
-
+```markdown
 Write the happy paths and unhappy paths for the following scenarios step by step. Just include the paths without headings and subheadings. Start with "Acceptance Criteria" heading, then list the happy and unhappy paths.
+```
 
 **Generate Gherkin for the Acceptance Criteria**
-
+```markdown
 Generate concise Gherkin syntax examples for general button interactions based on context. Use a first-person perspective, starting with "When I click this button." For positive outcomes, include "Given I am on this screen" or "Then I should see this screen" or "Then I should be redirected to this screen." Also, include "Then I should receive a message stating that 'example'." Adapt the number of examples based on context, incorporating happy paths and unhappy paths. Break down scenarios if there are more than 3 or 4 details; otherwise, keep it concise using "And" to divide details. Always use "When I click the [Button Name] button" for button interactions. Additionally, format multiple data entries in a more concise manner (e.g., use "And I enter a valid email address, phone number, and mobile number"). Ensure that error or success messages are consistently displayed as "I receive a message stating that 'message'."
 
 Consider the specified Conditions of Satisfaction (COS) for the Gherkin syntax. Provide all possible scenarios and scenario outlines. Include invalid scenarios in Gherkin examples.
 
 When you are ready, say yes and I will enter the scenarios.  
 Think step by step.
-
+```
 ---
 
 ## GIT Fundamental Commands
