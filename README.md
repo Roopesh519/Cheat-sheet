@@ -2,10 +2,10 @@
 ______________________________________________________________________________
 
 ## Table of Contents
-- Prompts for Happy, Unhappy Path and Gherkin
-- GIT Fundamental Commands
-- iMac Shortcuts
-- Emulator Commands
+- [Prompts for Happy, Unhappy Path and Gherkin](#prompts-for-happy-unhappy-path-and-gherkin)
+- [GIT Fundamental Commands](#git-fundamental-commands)
+- [iMac Shortcuts](#imac-shortcuts)
+- [Emulator Commands](#emulator-commands)
 
 ---
 
