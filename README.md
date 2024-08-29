@@ -24,6 +24,15 @@ Consider the specified Conditions of Satisfaction (COS) for the Gherkin syntax. 
 
 When you are ready, say yes and I will enter the scenarios.  
 Think step by step.
+
+The format is
+
+Acceptance Criteria
+(nothing under acceptance criteria)
+Happy Paths:
+(All the happy paths with number bullets )
+Unhappy Paths:
+(All the unhappy paths with number bullets )
 ```
 ---
 
