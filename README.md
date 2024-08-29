@@ -38,7 +38,7 @@ Think step by step.
 6. `git stash apply`
 
 ### Important Commands
-1. Dry run -> `npm bdd_dry_run`
+1. Dry run -> ```markdown `npm bdd_dry_run` ```
 2. Run localhost -> `npm run dev`
 3. Run single feature -> `npx cucumber-js path/to/your/file.feature --import test`
 4. Run all the features -> 
