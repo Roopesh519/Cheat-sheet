@@ -40,7 +40,7 @@ Think step by step.
 ### Important Commands
 1. Dry run ->
 ```markdown
-`npm bdd_dry_run`
+npm bdd_dry_run
 ```
 2. Run localhost -> `npm run dev`
 6. Run single feature -> `npx cucumber-js path/to/your/file.feature --import test`
