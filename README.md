@@ -1,4 +1,3 @@
-Here's a `README.md` file content that you can use for your GitHub repository:
 
 ```markdown
 # CHEAT SHEET
