@@ -1,0 +1,25 @@
+site_name: Roopesh cheat-sheet
+plugins:
+  - search
+
+theme:
+  name: 'material'
+  features:
+    - code-copy
+    - navigation.expand
+    - navigation.instant
+  palette:
+    - scheme: default  # default light mode
+    - scheme: material     # dark mode (you can use 'slate', 'palenight', 'material', or custom schemes)
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+
+extra_javascript:
+  - js/theme-toggle.js
+  - js/copy-button.js
+
+extra_css:
+  - css/extra.css

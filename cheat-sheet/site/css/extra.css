@@ -1,0 +1,28 @@
+.copy-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-button:hover {
+    background: #45a049;
+}
+
+/* Dark mode custom styles */
+body[data-theme='dark'] {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Light mode custom styles */
+  body[data-theme='light'] {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
