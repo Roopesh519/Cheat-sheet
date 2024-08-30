@@ -49,7 +49,7 @@ Unhappy Paths:
 ### Important Commands
 1. Dry run
 ```markdown
-npm bdd_dry_run
+npm run bdd_dry_run
 ```
 2. Run localhost
 ```markdown
@@ -62,7 +62,10 @@ npx cucumber-js path/to/your/file.feature --import test
 4. Run all the features  
 8. Install Packages
 ```markdown
-npm i --force / npm install --force
+npm i --force
+```
+```markdown
+npm install --force
 ```
 
 ### Test the Pipeline Locally
