@@ -1,4 +1,4 @@
-<button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+<!-- <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button> -->
 <link rel="stylesheet" href="css/extra.css">
 
 # CHEAT SHEET
