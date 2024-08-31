@@ -4,14 +4,6 @@
 # CHEAT SHEET
 ______________________________________________________________________________
 
-## Table of Contents
-- [Prompts for Happy, Unhappy Path and Gherkin](#prompts-for-happy-unhappy-path-and-gherkin)
-- [GIT Fundamental Commands](#git-fundamental-commands)
-- [iMac Shortcuts](#imac-shortcuts)
-- [Emulator Commands](#emulator-commands)
-
----
-
 ## Prompts for Happy, Unhappy Path and Gherkin
 
 **Generate Happy paths and Unhappy paths**
