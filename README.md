@@ -175,3 +175,8 @@ Retrieve the APK from:
 ```bash
 Android/app/build/outputs/apk/release/app-release.apk
 ```
+
+EXPO_PUBLIC_AUTH0_API_DOMAIN=dev-86mkkc8ohutmi3ov.us.auth0.com
+EXPO_PUBLIC_AUTH0_CLIENT_ID=dN9kXpRxkLkl96bDssDvjXtHETt1uvIL
+EXPO_PUBLIC_APP_SCHEME=com.halspan.app
+
