@@ -3,24 +3,10 @@
 
 Here is a well-documented `maestro.md` file based on the provided steps:
 
-```markdown
+
 # Maestro Setup for E2E Testing in Expo Project
 
 This guide outlines the steps to set up and configure Maestro for end-to-end (E2E) testing in your existing Expo project.
-
-## Table of Contents
-1. [Verify Project Setup](#1-verify-project-setup)
-2. [Install Maestro CLI Locally](#2-install-maestro-cli-locally)
-3. [Configure EAS Build](#3-configure-eas-build)
-4. [Disable New Android Build Infrastructure](#4-disable-new-android-build-infrastructure)
-5. [Create Maestro Test Flows](#5-create-maestro-test-flows)
-6. [Test Locally](#6-test-locally)
-7. [Create Custom EAS Build Workflow](#7-create-custom-eas-build-workflow)
-8. [Modify `eas.json`](#8-modify-easjson)
-9. [Run EAS Build with Maestro Tests](#9-run-eas-build-with-maestro-tests)
-10. [View Test Results](#10-view-test-results)
-
----
 
 ## 1. Verify Project Setup
 

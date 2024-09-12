@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#7-create-custom-eas-build-workflow" class="md-skip">
+        <a href="#maestro-setup-for-e2e-testing-in-expo-project" class="md-skip">
           Skip to content
         </a>
       
@@ -245,6 +245,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -273,12 +275,68 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-verify-project-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Verify Project Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-maestro-cli-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install Maestro CLI Locally
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configure-eas-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Configure EAS Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-disable-new-android-build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Disable New Android Build Infrastructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-create-maestro-test-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Create Maestro Test Flows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-test-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Test Locally
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#7-create-custom-eas-build-workflow" class="md-nav__link">
@@ -350,12 +408,68 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-verify-project-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Verify Project Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-maestro-cli-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install Maestro CLI Locally
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configure-eas-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Configure EAS Build
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-disable-new-android-build-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Disable New Android Build Infrastructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-create-maestro-test-flows" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Create Maestro Test Flows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-test-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Test Locally
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#7-create-custom-eas-build-workflow" class="md-nav__link">
@@ -417,130 +531,103 @@
                   
 
 
-  <h1>Maestro</h1>
-
 <!-- <button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button> -->
 <p><link rel="stylesheet" href="css/extra.css"></p>
 <p>Here is a well-documented <code>maestro.md</code> file based on the provided steps:</p>
-<div class="highlight"><pre><span></span><code><span class="gh"># Maestro Setup for E2E Testing in Expo Project</span>
-
-This guide outlines the steps to set up and configure Maestro for end-to-end (E2E) testing in your existing Expo project.
-
-<span class="gu">## Table of Contents</span>
-<span class="k">1.</span> [<span class="nt">Verify Project Setup</span>](<span class="na">#1-verify-project-setup</span>)
-<span class="k">2.</span> [<span class="nt">Install Maestro CLI Locally</span>](<span class="na">#2-install-maestro-cli-locally</span>)
-<span class="k">3.</span> [<span class="nt">Configure EAS Build</span>](<span class="na">#3-configure-eas-build</span>)
-<span class="k">4.</span> [<span class="nt">Disable New Android Build Infrastructure</span>](<span class="na">#4-disable-new-android-build-infrastructure</span>)
-<span class="k">5.</span> [<span class="nt">Create Maestro Test Flows</span>](<span class="na">#5-create-maestro-test-flows</span>)
-<span class="k">6.</span> [<span class="nt">Test Locally</span>](<span class="na">#6-test-locally</span>)
-<span class="k">7.</span> [<span class="nt">Create Custom EAS Build Workflow</span>](<span class="na">#7-create-custom-eas-build-workflow</span>)
-<span class="k">8.</span> [<span class="nt">Modify `eas.json`</span>](<span class="na">#8-modify-easjson</span>)
-<span class="k">9.</span> [<span class="nt">Run EAS Build with Maestro Tests</span>](<span class="na">#9-run-eas-build-with-maestro-tests</span>)
-<span class="k">10.</span> [<span class="nt">View Test Results</span>](<span class="na">#10-view-test-results</span>)
-
----
-
-<span class="gu">## 1. Verify Project Setup</span>
-
-Make sure you have access to the repository with the Expo project and are working on the correct branch.
-
-<span class="gu">## 2. Install Maestro CLI Locally</span>
-
-To install Maestro on your local machine for testing:
-
-<span class="k">1.</span> Open a terminal and run the following commands:
-
-<span class="sb">    ```bash</span>
-<span class="w">    </span><span class="c1"># Install Maestro globally</span>
-<span class="w">    </span>brew<span class="w"> </span>tap<span class="w"> </span>mobile-dev-inc/tap
-<span class="w">    </span>brew<span class="w"> </span>install<span class="w"> </span>maestro
-<span class="w">    </span>maestro<span class="w"> </span>--version
-<span class="sb">    ```</span>
-
-<span class="k">2.</span> If you encounter any permission issues with Homebrew, you may need to fix them:
-
-<span class="sb">    ```bash</span>
-<span class="w">    </span>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="k">$(</span>whoami<span class="k">)</span><span class="w"> </span>/usr/local/Cellar<span class="w"> </span>/usr/local/Homebrew<span class="w"> </span>/usr/local/bin<span class="w"> </span>/usr/local/sbin<span class="w"> </span>/usr/local/share<span class="w"> </span>/usr/local/opt<span class="w"> </span>/usr/local/etc<span class="w"> </span>/usr/local/include<span class="w"> </span>/usr/local/lib
-<span class="sb">    ```</span>
-
-<span class="k">3.</span> Re-run the installation commands:
-
-<span class="sb">    ```bash</span>
-<span class="w">    </span>brew<span class="w"> </span>tap<span class="w"> </span>mobile-dev-inc/tap
-<span class="w">    </span>brew<span class="w"> </span>install<span class="w"> </span>maestro
-<span class="w">    </span>brew<span class="w"> </span>doctor
-<span class="sb">    ```</span>
-
-<span class="k">4.</span> For installation options without Homebrew, refer to the [<span class="nt">Maestro Installation Guide</span>](<span class="na">https://maestro.mobile.dev/getting-started/installation</span>).
-
-<span class="gu">## 3. Configure EAS Build</span>
-
-If EAS Build is not yet set up, follow these steps:
-
-<span class="k">1.</span> Initialize EAS in your project:
-
-<span class="sb">    ```bash</span>
-<span class="w">    </span>eas<span class="w"> </span>init
-<span class="w">    </span>eas<span class="w"> </span>build:configure
-<span class="sb">    ```</span>
-
-<span class="k">2.</span> Add the following to your <span class="sb">`app.config.js`</span> file to link the project to the correct owner:
-
-<span class="sb">    ```json</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;roopesh565&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="sb">    ```</span>
-
-<span class="k">3.</span> If this configuration is already set up by your team, you may skip this step.
-
-<span class="gu">## 4. Disable New Android Build Infrastructure</span>
-
-For Maestro E2E testing, you must disable the New Android Build Infrastructure:
-
-<span class="k">1.</span> Visit the [<span class="nt">Expo Project Settings</span>](<span class="na">https://expo.dev/accounts/[account]/projects/[project]/settings</span>).
-<span class="k">2.</span> Disable the <span class="gs">**New Android Build Infrastructure**</span> option.
-
-<span class="gu">## 5. Create Maestro Test Flows</span>
-
-<span class="k">1.</span> Create a <span class="sb">`maestro`</span> directory in the root of your project:
-
-<span class="sb">    ```bash</span>
-<span class="w">    </span>mkdir<span class="w"> </span>maestro
-<span class="sb">    ```</span>
-
-<span class="k">2.</span> Inside the <span class="sb">`maestro`</span> directory, create test flow files, such as:
-
-<span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="gs">**home.yaml**</span> (for testing the home screen):
-
-<span class="sb">     ```yaml</span>
-<span class="w">     </span><span class="nt">appId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your.expo.project.appId</span>
-<span class="w">     </span><span class="l l-Scalar l-Scalar-Plain">---</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">launchApp</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">assertVisible</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Welcome!&#39;</span>
-<span class="sb">     ```</span>
-
-<span class="w">   </span><span class="k">-</span><span class="w"> </span><span class="gs">**expand_test.yaml**</span> (for testing the Explore screen):
-
-<span class="sb">     ```yaml</span>
-<span class="w">     </span><span class="nt">appId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your.expo.project.appId</span>
-<span class="w">     </span><span class="l l-Scalar l-Scalar-Plain">---</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">launchApp</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tapOn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Explore.*&#39;</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tapOn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;.*File-based</span><span class="nv"> </span><span class="s">routing&#39;</span>
-<span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">assertVisible</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;This</span><span class="nv"> </span><span class="s">app</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">two</span><span class="nv"> </span><span class="s">screens.*&#39;</span>
-<span class="sb">     ```</span>
-
-<span class="k">&gt; </span><span class="ge">Replace `your.expo.project.appId` with the actual app ID (e.g., `com.halspan.app.qa`).</span>
-
-<span class="gu">## 6. Test Locally</span>
-
-To run the tests locally on an emulator or simulator:
-
-```bash
-<span class="gh"># Run the tests</span>
-maestro test maestro/home.yaml
-maestro test maestro/expand_test.yaml
+<h1 id="maestro-setup-for-e2e-testing-in-expo-project">Maestro Setup for E2E Testing in Expo Project</h1>
+<p>This guide outlines the steps to set up and configure Maestro for end-to-end (E2E) testing in your existing Expo project.</p>
+<h2 id="1-verify-project-setup">1. Verify Project Setup</h2>
+<p>Make sure you have access to the repository with the Expo project and are working on the correct branch.</p>
+<h2 id="2-install-maestro-cli-locally">2. Install Maestro CLI Locally</h2>
+<p>To install Maestro on your local machine for testing:</p>
+<ol>
+<li>
+<p>Open a terminal and run the following commands:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install Maestro globally</span>
+brew<span class="w"> </span>tap<span class="w"> </span>mobile-dev-inc/tap
+brew<span class="w"> </span>install<span class="w"> </span>maestro
+maestro<span class="w"> </span>--version
+</code></pre></div>
+</li>
+<li>
+<p>If you encounter any permission issues with Homebrew, you may need to fix them:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="k">$(</span>whoami<span class="k">)</span><span class="w"> </span>/usr/local/Cellar<span class="w"> </span>/usr/local/Homebrew<span class="w"> </span>/usr/local/bin<span class="w"> </span>/usr/local/sbin<span class="w"> </span>/usr/local/share<span class="w"> </span>/usr/local/opt<span class="w"> </span>/usr/local/etc<span class="w"> </span>/usr/local/include<span class="w"> </span>/usr/local/lib
+</code></pre></div>
+</li>
+<li>
+<p>Re-run the installation commands:</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>tap<span class="w"> </span>mobile-dev-inc/tap
+brew<span class="w"> </span>install<span class="w"> </span>maestro
+brew<span class="w"> </span>doctor
+</code></pre></div>
+</li>
+<li>
+<p>For installation options without Homebrew, refer to the <a href="https://maestro.mobile.dev/getting-started/installation">Maestro Installation Guide</a>.</p>
+</li>
+</ol>
+<h2 id="3-configure-eas-build">3. Configure EAS Build</h2>
+<p>If EAS Build is not yet set up, follow these steps:</p>
+<ol>
+<li>
+<p>Initialize EAS in your project:</p>
+<div class="highlight"><pre><span></span><code>eas<span class="w"> </span>init
+eas<span class="w"> </span>build:configure
+</code></pre></div>
+</li>
+<li>
+<p>Add the following to your <code>app.config.js</code> file to link the project to the correct owner:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;roopesh565&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>If this configuration is already set up by your team, you may skip this step.</p>
+</li>
+</ol>
+<h2 id="4-disable-new-android-build-infrastructure">4. Disable New Android Build Infrastructure</h2>
+<p>For Maestro E2E testing, you must disable the New Android Build Infrastructure:</p>
+<ol>
+<li>Visit the <a href="https://expo.dev/accounts/[account]/projects/[project]/settings">Expo Project Settings</a>.</li>
+<li>Disable the <strong>New Android Build Infrastructure</strong> option.</li>
+</ol>
+<h2 id="5-create-maestro-test-flows">5. Create Maestro Test Flows</h2>
+<ol>
+<li>
+<p>Create a <code>maestro</code> directory in the root of your project:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>maestro
+</code></pre></div>
+</li>
+<li>
+<p>Inside the <code>maestro</code> directory, create test flow files, such as:</p>
+</li>
+<li>
+<p><strong>home.yaml</strong> (for testing the home screen):</p>
+<div class="highlight"><pre><span></span><code><span class="nt">appId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your.expo.project.appId</span>
+<span class="nn">---</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">launchApp</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">assertVisible</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Welcome!&#39;</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>expand_test.yaml</strong> (for testing the Explore screen):</p>
+<div class="highlight"><pre><span></span><code><span class="nt">appId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your.expo.project.appId</span>
+<span class="nn">---</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">launchApp</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tapOn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Explore.*&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tapOn</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;.*File-based</span><span class="nv"> </span><span class="s">routing&#39;</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">assertVisible</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;This</span><span class="nv"> </span><span class="s">app</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">two</span><span class="nv"> </span><span class="s">screens.*&#39;</span>
+</code></pre></div>
+</li>
+</ol>
+<blockquote>
+<p>Replace <code>your.expo.project.appId</code> with the actual app ID (e.g., <code>com.halspan.app.qa</code>).</p>
+</blockquote>
+<h2 id="6-test-locally">6. Test Locally</h2>
+<p>To run the tests locally on an emulator or simulator:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Run the tests</span>
+maestro<span class="w"> </span><span class="nb">test</span><span class="w"> </span>maestro/home.yaml
+maestro<span class="w"> </span><span class="nb">test</span><span class="w"> </span>maestro/expand_test.yaml
 </code></pre></div>
 <h2 id="7-create-custom-eas-build-workflow">7. Create Custom EAS Build Workflow</h2>
 <p>To integrate Maestro with your EAS build process, create a custom build workflow:</p>
