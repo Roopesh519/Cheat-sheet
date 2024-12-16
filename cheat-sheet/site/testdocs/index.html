@@ -1,0 +1,613 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Testing Documentation - Roopesh cheat-sheet</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#testing-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Roopesh cheat-sheet" class="md-header__button md-logo" aria-label="Roopesh cheat-sheet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Roopesh cheat-sheet
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Testing Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="material" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Roopesh cheat-sheet" class="md-nav__button md-logo" aria-label="Roopesh cheat-sheet" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Roopesh cheat-sheet
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maestro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maestro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-folders-and-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Folders and Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-unit-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Unit Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Integration Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-individual-feature-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Individual Feature Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-pipeline-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the Pipeline Locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#driver-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Driver Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Driver Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features-of-driverjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features of Driver.js
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Contribute
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="testing-documentation">Testing Documentation</h1>
+<p>This document provides an overview of the testing framework, folder structure, scripts, and key components used in our testing setup.</p>
+<hr />
+<h2 id="folder-structure">Folder Structure</h2>
+<p>The project contains the following testing folder structure:</p>
+<div class="highlight"><pre><span></span><code>test
+├── bdd_api
+│   └── index.js
+├── bdd_getbearertoken
+│   └── token.js
+├── bdd_payload
+│   └── payload.js
+├── integration-testing
+│   ├── Flow1
+│   │   ├── 10_edit_questionnaire_section_page_name.feature
+│   │   └── cucumber.js
+│   └── Flow2
+│       ├── 1_login.feature
+│       └── cucumber.js
+├── step-definations
+│   ├── admin
+│   │   ├── advanced-editor.js
+│   ├── coverageData
+│   │   ├── coverage_A.json
+│   ├── Driver.js
+│   └── failed_scenarios
+│       ├── &lt;scenario-id&gt;_Admin adds the basic editor compliance
+├── support
+│   ├── 600.csv
+└── unit-testing
+    ├── unit-testing1
+    │   ├── 10_edit_questionnaire_section_page_name.feature
+    └── unit-testing2
+        ├── 26_change_status.feature
+</code></pre></div>
+<h3 id="key-folders-and-files">Key Folders and Files</h3>
+<ul>
+<li><strong>bdd_api</strong>: Contains API integration functions.</li>
+<li><strong>bdd_getbearertoken</strong>: Handles token generation for authentication.</li>
+<li><strong>bdd_payload</strong>: Contains payload configurations for API testing.</li>
+<li><strong>integration-testing</strong>: Contains feature files and configurations for integration testing.</li>
+<li><strong>step-definations</strong>: Holds step definition files, including utility files and failed scenario logs.</li>
+<li><strong>support</strong>: Contains support files and data for testing.</li>
+<li><strong>unit-testing</strong>: Contains unit test feature files.</li>
+</ul>
+<hr />
+<h2 id="scripts">Scripts</h2>
+<h3 id="running-unit-testing">Running Unit Testing</h3>
+<p>To execute unit testing, the script <code>bdd_unit_testing_azure.js</code> is used. This script handles:</p>
+<ul>
+<li>Discovery of <code>.feature</code> files in the <code>unit-testing</code> folder.</li>
+<li>Parallel execution of up to 5 feature files.</li>
+<li>Delay mechanisms for test queue management.</li>
+</ul>
+<h3 id="running-integration-testing">Running Integration Testing</h3>
+<p>The script <code>integration_testing.js</code> is used for running integration tests. It:</p>
+<ul>
+<li>Filters out irrelevant folders from the <code>integration-testing</code> directory.</li>
+<li>Runs tests in parallel with a maximum of 10 concurrent executions.</li>
+<li>Manages test queue and retry mechanisms for robustness.</li>
+</ul>
+<h3 id="running-individual-feature-files">Running Individual Feature Files</h3>
+<p>You can run dry run using:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>bdd_dry_run
+</code></pre></div>
+<p>You can run an individual feature file using:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>cucumber<span class="w"> </span>&lt;relative<span class="w"> </span>path<span class="w"> </span>of<span class="w"> </span>feature<span class="w"> </span>file&gt;
+</code></pre></div>
+<h3 id="running-the-pipeline-locally">Running the Pipeline Locally</h3>
+<p>To run the pipeline locally:</p>
+<div class="highlight"><pre><span></span><code>pm2<span class="w"> </span><span class="nb">kill</span>
+npm<span class="w"> </span>run<span class="w"> </span>build
+pm2<span class="w"> </span>start<span class="w"> </span>scripts/server.js
+node<span class="w"> </span>scripts/bdd_unit_testing_azure.js
+node<span class="w"> </span>scripts/integration_testing.js
+</code></pre></div>
+<hr />
+<h2 id="driver-configuration">Driver Configuration</h2>
+<p>The <code>Driver.js</code> file sets up the global Selenium WebDriver with Chrome options for executing tests. Key configurations include:</p>
+<ul>
+<li>Headless and non-headless execution options.</li>
+<li>Setting a window size of 1920x1080.</li>
+<li>Disabling unnecessary features for performance optimization.</li>
+</ul>
+<h3 id="key-features-of-driverjs">Key Features of <code>Driver.js</code></h3>
+<ul>
+<li>Initializes WebDriver before all tests.</li>
+<li>Configures default timeouts to 34 seconds.</li>
+<li>Utilizes <code>faker.js</code> for generating test data.</li>
+</ul>
+<p>Example snippet:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">chrome</span><span class="p">.</span><span class="nx">Options</span><span class="p">();</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">addArguments</span><span class="p">(</span><span class="s1">&#39;--disable-dev-shm-usage&#39;</span><span class="p">);</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">addArguments</span><span class="p">(</span><span class="s1">&#39;--no-sandbox&#39;</span><span class="p">);</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">addArguments</span><span class="p">(</span><span class="s1">&#39;--window-size=1920,1080&#39;</span><span class="p">);</span>
+
+<span class="nb">global</span><span class="p">.</span><span class="nx">driver</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Builder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">forBrowser</span><span class="p">(</span><span class="nx">Browser</span><span class="p">.</span><span class="nx">CHROME</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">setChromeOptions</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">build</span><span class="p">();</span>
+
+<span class="nx">BeforeAll</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">driver</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;http://localhost:3000/&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Test setup complete.&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<hr />
+<h2 id="additional-notes">Additional Notes</h2>
+<ol>
+<li><strong>Parallel Execution</strong>: Both unit and integration testing scripts support parallel execution for faster results.</li>
+<li><strong>Test Reports</strong>:</li>
+<li>JSON and JUnit reports are generated for all tests in the <code>./reports</code> and <code>./reports-xml</code> directories.</li>
+<li><strong>Retry Mechanism</strong>: The framework retries failed tests once to ensure reliability.</li>
+<li><strong>Error Handling</strong>: Scripts include error handling to exit gracefully in case of issues.</li>
+</ol>
+<hr />
+<h2 id="how-to-contribute">How to Contribute</h2>
+<ol>
+<li>Add new <code>.feature</code> files to the appropriate directory.</li>
+<li>Update or create step definitions in <code>step-definations</code>.</li>
+<li>Ensure all dependencies are installed by running:
+   <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
+</code></pre></div></li>
+<li>Run tests locally using the scripts provided.</li>
+</ol>
+<hr />
+<h2 id="dependencies">Dependencies</h2>
+<p>Ensure the following dependencies are installed:</p>
+<ul>
+<li><code>@cucumber/cucumber</code></li>
+<li><code>selenium-webdriver</code></li>
+<li><code>faker</code></li>
+<li><code>istanbul-lib-coverage</code></li>
+</ul>
+<hr />
+<p>For further details or issues, please reach out to the QA team.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["code-copy", "navigation.expand", "navigation.instant"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="../js/theme-toggle.js"></script>
+      
+        <script src="../js/copy-button.js"></script>
+      
+    
+  </body>
+</html>
