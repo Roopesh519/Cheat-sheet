@@ -2,6 +2,7 @@ site_name: Roopesh cheat-sheet
 nav:
   - Home: index.md
   - Maestro: maestro.md
+  - Halspan Test Documentation: testdocs.md
 plugins:
   - search
 
