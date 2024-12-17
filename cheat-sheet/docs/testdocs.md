@@ -18,26 +18,26 @@ test
 │   └── payload.js
 ├── integration-testing
 │   ├── Flow1
-│   │   ├── 10_edit_questionnaire_section_page_name.feature
+│   │   ├── sample.feature
 │   │   └── cucumber.js
 │   └── Flow2
-│       ├── 1_login.feature
+│       ├── sample.feature
 │       └── cucumber.js
 ├── step-definations
 │   ├── admin
-│   │   ├── advanced-editor.js
+│   │   ├── sample.js
 │   ├── coverageData
 │   │   ├── coverage_A.json
 │   ├── Driver.js
 │   └── failed_scenarios
-│       ├── <scenario-id>_Admin adds the basic editor compliance
+│       ├── <scenario-id>_Sample
 ├── support
 │   ├── 600.csv
 └── unit-testing
     ├── unit-testing1
-    │   ├── 10_edit_questionnaire_section_page_name.feature
+    │   ├── sample.feature
     └── unit-testing2
-        ├── 26_change_status.feature
+        ├── sample.feature
 ```
 
 ### Key Folders and Files
