@@ -41,6 +41,63 @@ Unhappy Paths:
 5. `git stash` - If you have added changes but want to switch to another branch before committing, stash will hide the changes and retrieve them later.
 6. `git stash apply`
 
+### To reset a branch to a previous commit and discard all uncommitted and pulled changes, follow these steps:
+
+### 1. Identify the Previous Commit
+   Find the commit hash you want to reset to. You can use:
+
+   ```bash
+   git log
+   ```
+
+   This will show a list of commits. Note the hash of the commit you want to reset to.
+
+### 2. Reset to the Desired Commit
+   Use the following command to reset the branch to the specific commit:
+
+   ```bash
+   git reset --hard <commit-hash>
+   ```
+
+   Replace `<commit-hash>` with the actual hash of the commit.
+
+### 3. Discard Pulled Changes
+   If you've pulled changes that you want to discard, ensure your local branch is in sync with the remote by forcing the reset:
+
+   ```bash
+   git reset --hard origin/<branch-name>
+   ```
+
+   Replace `<branch-name>` with the name of your branch.
+
+### 4. Clean Untracked Files (Optional)
+   If you want to remove any untracked files or directories, use:
+
+   ```bash
+   git clean -fd
+   ```
+
+### Example Commands:
+1. View the commit history:
+   ```bash
+   git log
+   ```
+
+2. Reset to a specific commit:
+   ```bash
+   git reset --hard 1a2b3c4d
+   ```
+
+3. Force reset to the remote branch state:
+   ```bash
+   git reset --hard origin/main
+   ```
+
+4. Clean untracked files:
+   ```bash
+   git clean -fd
+   ```
+
 ### Important Commands
 1. Dry run
 ```markdown

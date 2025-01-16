@@ -176,3 +176,19 @@ Retrieve the APK from:
 Android/app/build/outputs/apk/release/app-release.apk
 ```
 
+# To build the docs use the following commands
+
+### Run the Virtual environment
+```bash
+source venv/bin/activate
+```
+
+### Build the docs
+```bash
+mkdocs build
+```
+
+### Deactivate the venv
+```bash
+deactivate
+```

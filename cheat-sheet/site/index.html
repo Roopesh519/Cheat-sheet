@@ -293,6 +293,60 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#to-reset-a-branch-to-a-previous-commit-and-discard-all-uncommitted-and-pulled-changes-follow-these-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      To reset a branch to a previous commit and discard all uncommitted and pulled changes, follow these steps:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-identify-the-previous-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Identify the Previous Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reset-to-the-desired-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Reset to the Desired Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-discard-pulled-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Discard Pulled Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-clean-untracked-files-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Clean Untracked Files (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Commands:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#important-commands" class="md-nav__link">
     <span class="md-ellipsis">
       Important Commands
@@ -547,6 +601,60 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#to-reset-a-branch-to-a-previous-commit-and-discard-all-uncommitted-and-pulled-changes-follow-these-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      To reset a branch to a previous commit and discard all uncommitted and pulled changes, follow these steps:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-identify-the-previous-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Identify the Previous Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reset-to-the-desired-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Reset to the Desired Commit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-discard-pulled-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Discard Pulled Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-clean-untracked-files-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Clean Untracked Files (Optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Commands:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#important-commands" class="md-nav__link">
     <span class="md-ellipsis">
       Important Commands
@@ -748,6 +856,49 @@ Unhappy Paths:
 <li><code>git pull</code></li>
 <li><code>git stash</code> - If you have added changes but want to switch to another branch before committing, stash will hide the changes and retrieve them later.</li>
 <li><code>git stash apply</code></li>
+</ol>
+<h3 id="to-reset-a-branch-to-a-previous-commit-and-discard-all-uncommitted-and-pulled-changes-follow-these-steps">To reset a branch to a previous commit and discard all uncommitted and pulled changes, follow these steps:</h3>
+<h3 id="1-identify-the-previous-commit">1. Identify the Previous Commit</h3>
+<p>Find the commit hash you want to reset to. You can use:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log
+</code></pre></div>
+<p>This will show a list of commits. Note the hash of the commit you want to reset to.</p>
+<h3 id="2-reset-to-the-desired-commit">2. Reset to the Desired Commit</h3>
+<p>Use the following command to reset the branch to the specific commit:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div>
+<p>Replace <code>&lt;commit-hash&gt;</code> with the actual hash of the commit.</p>
+<h3 id="3-discard-pulled-changes">3. Discard Pulled Changes</h3>
+<p>If you've pulled changes that you want to discard, ensure your local branch is in sync with the remote by forcing the reset:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>origin/&lt;branch-name&gt;
+</code></pre></div>
+<p>Replace <code>&lt;branch-name&gt;</code> with the name of your branch.</p>
+<h3 id="4-clean-untracked-files-optional">4. Clean Untracked Files (Optional)</h3>
+<p>If you want to remove any untracked files or directories, use:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clean<span class="w"> </span>-fd
+</code></pre></div>
+<h3 id="example-commands">Example Commands:</h3>
+<ol>
+<li>
+<p>View the commit history:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>log
+</code></pre></div></p>
+</li>
+<li>
+<p>Reset to a specific commit:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>1a2b3c4d
+</code></pre></div></p>
+</li>
+<li>
+<p>Force reset to the remote branch state:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>origin/main
+</code></pre></div></p>
+</li>
+<li>
+<p>Clean untracked files:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clean<span class="w"> </span>-fd
+</code></pre></div></p>
+</li>
 </ol>
 <h3 id="important-commands">Important Commands</h3>
 <ol>
