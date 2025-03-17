@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../testdocs/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Git Workflow and Best Practices - Roopesh cheat-sheet</title>
+        <title>Process - Roopesh cheat-sheet</title>
       
     
     
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git Workflow and Best Practices
+              Process
             
           </span>
         </div>
@@ -266,6 +268,234 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Process
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Process
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-git-branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Git Branching Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Git Branching Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branching-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branching Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Branching Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugfix-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bugfix Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotfix-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotfix Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI Branches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-commit-message-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Commit Message Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Commit Message Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pull-request-pr-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Pull Request (PR) Guidelines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-jira-card-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Jira Card Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Jira Card Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prioritization-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prioritization &amp; Readiness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hotfix-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotfix Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 

@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Maestro: maestro.md
   - Halspan Test Documentation: testdocs.md
+  - Process: process.md
 plugins:
   - search
 
