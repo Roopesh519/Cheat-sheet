@@ -4,6 +4,7 @@ nav:
   - Maestro: maestro.md
   - Halspan Test Documentation: testdocs.md
   - Process: process.md
+  - Test Charter: charter.md
 plugins:
   - search
 
