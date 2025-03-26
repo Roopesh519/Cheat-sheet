@@ -51,7 +51,6 @@
     <style>
       body {
           font-family: Arial, sans-serif;
-          margin: 20px;
       }
       pre {
           background: #f4f4f4;
@@ -379,7 +378,7 @@
 
 
 <h1 id="test-charter-prompt">Test Charter Prompt</h1>
-<button onclick="copyToClipboard()">Copy</button>
+<button id="copyButton" onclick="copyToClipboard()">Copy</button>
 <div class="highlight"><pre id="markdown"><span></span><code><span class="gu">CHARTER</span>
 Define the testing objectives and expected behavior.
 
@@ -477,9 +476,9 @@ Exploratory Testing: <span class="gs">**[X]%**</span>
       <div class="md-copyright">
   
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    Made by
+    <a href="https://roopesh-s.netlify.app" target="_blank" rel="noopener">
+      Roopesh
     </a>
   
 </div>
@@ -495,9 +494,17 @@ Exploratory Testing: <span class="gs">**[X]%**</span>
 
     <script>
       function copyToClipboard() {
+          const button = document.getElementById("copyButton");
           const markdownText = document.getElementById("markdown").innerText;
+  
           navigator.clipboard.writeText(markdownText).then(() => {
-              alert("Markdown copied to clipboard!");
+              button.innerText = "Copied!";
+              button.disabled = true;
+  
+              setTimeout(() => {
+                  button.innerText = "Copy";
+                  button.disabled = false;
+              }, 3000);
           }).catch(err => {
               console.error("Failed to copy: ", err);
           });
